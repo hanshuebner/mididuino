@@ -28,7 +28,7 @@ note of the generated bassline. Depending on the selected track and
 machine, this will be outside the range of the melodic machine and
 will need to be adjusted.
 
-New feature: configuration of sync and merging. Hold down Button1 (top
+_New feature:_ configuration of sync and merging. Hold down Button1 (top
 left) and then switch the MiniCommand ON. CLK selects the input port
 (IN1 or IN2), SND activates sending out of the clock on the MIDI
 Output, and MRG selects which messages on the second MIDI input will
@@ -62,7 +62,7 @@ clock is sent to the MachineDrum the second MiniCommand controls, and
 is again available at the THRU output. From there, it is sent to the
 IN2 of the next MiniCommand, etc...
 
-New feature: automatic detection of global and kit. When connecting
+_New feature:_ automatic detection of global and kit. When connecting
 the MC to the MachineDrum (both input and output), it will detect the
 loaded GLOBAL settings and the loaded KIT. It will flash "LOADED KIT"
 followed by the KIT name. This allows the MC to use the current
@@ -75,7 +75,7 @@ good way to detect if the MC is connected correctly. If it doesn't
 load the KIT automatically, either IN or OUT is not connected
 correctly.
 
-New feature: Improved feature: additional melodic machines. Additional
+_New feature:_ Improved feature: additional melodic machines. Additional
 melodic machines (such as GND-SN, E12-BC, etc...) are available for
 the pitch euclid generator.
 

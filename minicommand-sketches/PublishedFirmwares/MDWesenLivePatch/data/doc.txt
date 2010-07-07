@@ -6,7 +6,7 @@ RAM-P1 machine (filter and SRR) - slicing and repeating parts of the
 resampled pattern - "magic" MIDI learn function to quickly learn last
 4 moved MD parameters - recording and overdubbing of knob movements
 
-New feature: configuration of sync and merging. Hold down Button1 (top
+_New feature:_ configuration of sync and merging. Hold down Button1 (top
 left) and then switch the MiniCommand ON. CLK selects the input port
 (IN1 or IN2), SND activates sending out of the clock on the MIDI
 Output, and MRG selects which messages on the second MIDI input will
@@ -40,7 +40,7 @@ clock is sent to the MachineDrum the second MiniCommand controls, and
 is again available at the THRU output. From there, it is sent to the
 IN2 of the next MiniCommand, etc...
 
-New feature: automatic detection of global and kit. When connecting
+_New feature:_ automatic detection of global and kit. When connecting
 the MC to the MachineDrum (both input and output), it will detect the
 loaded GLOBAL settings and the loaded KIT. It will flash "LOADED KIT"
 followed by the KIT name. This allows the MC to use the current
@@ -53,19 +53,19 @@ good way to detect if the MC is connected correctly. If it doesn't
 load the KIT automatically, either IN or OUT is not connected
 correctly.
 
-New feature: automatic detection of a RAM-P1 track. The
+_New feature:_ automatic detection of a RAM-P1 track. The
 MDWesenLivePatch firmware assumes that resampling of the currently
 playing firmware is done with RAM-R1 and RAM-P1, and detects the track
 of the first RAM-P1 machine in the current track.
 
-New feature: modified page switching. To switch pages in the
+_New feature:_ modified page switching. To switch pages in the
 MDWesenLivePatch firmware, hold down Button1 (upper left) and press
 one of the encoders. The name of the corresponding page is shown above
 the encoder: DL1 (first delay control page), DL2 (second delay control
 page), RAM (automatic control of the RAM-P1 track if one is present in
 the currently loaded KIT) and AUT (automagic learning page).
 
-New feature: magic learning. The fourth page is a simple controller
+_New feature:_ magic learning. The fourth page is a simple controller
 page with 4 encoders. After switching on, these four encoders are not
 assigned. Move some parameters on the MachineDrum, switch to the "AUT"
 page and then press Button2 (the bottom left button). The MiniCommand
@@ -77,7 +77,7 @@ incredibly useful when playing live: you discover a nice sound combo,
 but want to modify something else without losing the ability to tweak
 the previous sound.
 
-New feature: knob movement recording. On the "AUT" page, and when MIDI
+_New feature:_ knob movement recording. On the "AUT" page, and when MIDI
 sync is enabled, you can record knob movements for each of the 4
 encoders. Make sure that the sync is running (the left LED is
 blinking), hold down Button3 (bottom right), and turn the encoder

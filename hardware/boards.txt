@@ -46,6 +46,29 @@ minicommand2.build.flags=-Wl,--section-start=.bss=0x802000,--defsym=__heap_end=0
 
 ############################################################
 
+at90u32.name=At90u32 USB MIDI Board
+
+at90u32.upload.protocol=midisend
+at90u32.upload.maximum_size=28000
+at90u32.upload.speed=19200
+at90u32.upload.midiid=0x45
+
+at90u32.bootloader.low_fuses=0x2f
+at90u32.bootloader.high_fuses=0x8a
+at90u32.bootloader.extended_fuses=0xff
+at90u32.bootloader.path=at90u32
+at90u32.bootloader.file=minicommand.hex
+at90u32.bootloader.unlock_bits=0x3F
+at90u32.bootloader.lock_bits=0x0F
+
+at90u32.build.mcu=atmega64
+at90u32.build.f_cpu=16000000L
+at90u32.build.core=at90u32
+at90u32.build.libraries=Midi GUI CommonTools
+at90u32.build.flags=-mcall-prologues -funsigned-char -funsigned-bitfields -fshort-enums -fpack-struct -Wall -fno-default-inline -fno-rtti -fno-implement-inlines --param inline-call-cost=2 -finline-limit=3 -fno-inline-small-functions -fno-tree-scev-cprop -fsplit-wide-types -fno-threadsafe-statics -Wl,--relax
+
+############################################################
+
 monojoystick.name=Monojoystick 1.1 (atmega64 16 Mhz + SRAM)
 
 monojoystick.upload.protocol=midisend

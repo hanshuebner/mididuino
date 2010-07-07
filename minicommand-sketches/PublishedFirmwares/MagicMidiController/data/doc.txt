@@ -10,7 +10,7 @@ The firmware provides 4 automagic pages. To switch from one page to
 another, hold down Button1 (top left), and press one of the 4 encoders
 to switch to the corresponding page (P0 to P3).
 
-New feature: magic learning. Every page (P0 to P3) is a simple
+_New feature:_ magic learning. Every page (P0 to P3) is a simple
 controller page with 4 encoders. After switching on, these four
 encoders are not assigned. Move some parameters on the connected MIDI
 device, and then press Button2 (the bottom left button). The
@@ -24,7 +24,7 @@ the previous parameters. This is incredibly useful when playing live:
 you discover a nice sound combo, but want to modify something else
 without losing the ability to tweak the previous sound.
 
-New feature: configuration of sync and merging. Hold down Button1 (top
+_New feature:_ configuration of sync and merging. Hold down Button1 (top
 left) and then switch the MiniCommand ON. CLK selects the input port
 (IN1 or IN2), SND activates sending out of the clock on the MIDI
 Output, and MRG selects which messages on the second MIDI input will
@@ -32,7 +32,7 @@ be merged into the output stream (CC, NOTE or SYX
 messages). MonoMachine Sysex messages won't be merged correctly (for
 now).
 
-New feature: knob movement recording. When MIDI sync is enabled, you
+_New feature:_ knob movement recording. When MIDI sync is enabled, you
 can record knob movements for each of the 4 encoders. Make sure that
 the sync is running (the left LED is blinking), hold down Button3
 (bottom right), and turn the encoder while Button3 is held down. This

@@ -36,14 +36,14 @@ RECV SYSEX ORIG mode to receive the new patterns, press the global config
 and navigate to RECV SYSEX and then to ORIG. This is a bit annoying, but it's
 the only way for the monomachine to save the received patterns.
 
-New feature: configuration of sync and merging. Hold down Button1 (top
+_New feature:_ configuration of sync and merging. Hold down Button1 (top
 left) and then switch the MiniCommand ON. CLK selects the input port
 (IN1 or IN2), SND activates sending out of the clock on the MIDI
 Output, and MRG selects which messages on the second MIDI input will
 be merged into the output stream (CC, NOTE or SYX
 messages). 
 
-A note about MIDI sync: MIDI clock sync is necessary for the
+_A note about MIDI sync:_ MIDI clock sync is necessary for the
 slicing/repetition and the knob movement part to work. For this, the
 MC needs to be synced to the clock of the MachineDrum. The simplest
 way to achieve this is to configure the MD to send SYNC information on
@@ -70,7 +70,7 @@ clock is sent to the MachineDrum the second MiniCommand controls, and
 is again available at the THRU output. From there, it is sent to the
 IN2 of the next MiniCommand, etc...
 
-New feature: automatic detection of global and kit. When connecting
+_New feature:_ automatic detection of global and kit. When connecting
 the MC to the MachineDrum (both input and output), it will detect the
 loaded GLOBAL settings and the loaded KIT. It will flash "LOADED KIT"
 followed by the KIT name. This allows the MC to use the current
@@ -83,7 +83,7 @@ good way to detect if the MC is connected correctly. If it doesn't
 load the KIT automatically, either IN or OUT is not connected
 correctly.
 
-New feature: Improved feature: additional melodic machines. Additional
+_New feature:_ Improved feature: additional melodic machines. Additional
 melodic machines (such as GND-SN, E12-BC, etc...) are available for
 the pitch euclid generator.
 

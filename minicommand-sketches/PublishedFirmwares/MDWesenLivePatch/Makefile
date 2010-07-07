@@ -19,9 +19,9 @@ CLASSPATH = $(subst jar ,jar:,$(wildcard $(JAR_DIR)/*.jar))
 PDEFILES=$(wildcard $(PDEDIR)/*.pde)
 
 CFLAGS += -Os -w -fno-exceptions -ffunction-sections -fdata-sections -mmcu=$(AVR_ARCH) -DF_CPU=$(F_CPU)
-CFLAGS += -Wl,--section-start=.bss=0x802000,--defsym=__heap_end=0x80ffff
 CFLAGS += -mcall-prologues -funsigned-char -funsigned-bitfields -fshort-enums -fpack-struct -Wall -Werror 
 CFLAGS += -fno-default-inline -nostdinc++ -fno-rtti -fno-implement-inlines 
+CFLAGS += -Wl,--section-start=.bss=0x802000,--defsym=__heap_end=0x80ffff
 
 #CFLAGS += --param inline-call-cost=2 -finline-limit=3 -fno-inline-small-functions
 #CFLAGS += -fno-tree-scev-cprop -fsplit-wide-types
