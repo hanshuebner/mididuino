@@ -140,7 +140,7 @@ public class AvrdudeUploader extends Uploader  {
   
   public boolean avrdude(Collection params) throws RunnerException {
     List commandDownloader = new ArrayList();
-    commandDownloader.add("avrdude");
+    commandDownloader.add("/avr/bin/avrdude");
 
     // Point avrdude at its config file since it's in a non-standard location.
     if (Base.isLinux()) {

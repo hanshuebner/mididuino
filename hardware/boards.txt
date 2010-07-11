@@ -128,5 +128,6 @@ atmega328.bootloader.lock_bits=0x0F
 
 atmega328.build.mcu=atmega328p
 atmega328.build.f_cpu=16000000L
-atmega328.build.libraries=CommonTools 
+atmega328.build.libraries=CommonTools
+atmega328.build.exclude_libraries=Midi MD GUI Elektron LFO MNM MDPages MDSketches MNMPages MNMSketches MidiSketches MidiTools Monome PageTools Profiler SDCard Sequencer
 atmega328.build.core=arduino-bare

@@ -813,6 +813,15 @@ public class Preferences {
       defaultValue : value;
     */
   }
+  
+  static public String[] getSplitted(String attribute) {
+    String list = Preferences.get(attribute);
+    if (list != null) {
+      return list.trim().split("\\s+");
+    }
+    return null;
+
+  }
 
 
   /**

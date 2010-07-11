@@ -85,10 +85,10 @@ public class Compiler implements MessageConsumer {
       libraryManager = new LibraryManager();
       libraryManager.buildAllUnbuilt();
 
-      String prefLibs = Preferences.get("boards." + Preferences.get("board") + ".build.libraries");
+      String prefLibs[] = Preferences.getSplitted("boards."
+                                                  + Preferences.get("board") + ".build.libraries");
       if (prefLibs != null) {
-        String []boardLibraries  = prefLibs.trim().split("\\s+");
-        for (String item : boardLibraries) {
+        for (String item : prefLibs) {
           libraryManager.addLibrary(libraries, libraryManager.get(item));
         }
       } 

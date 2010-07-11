@@ -75,8 +75,21 @@ public class LibraryManager {
     };
     libraries.clear();
     File[] libs = libDir.listFiles(onlyDirs);
+    String[] excludedLibs = Preferences.getSplitted("boards." + 
+                                                    Preferences.get("board") + ".build.exclude_libraries");
     for(int i = 0; i < libs.length; ++i){
-      libraries.add(new Library(this, libs[i]));
+      boolean exclude = false;
+      // remove excluded libs
+      if (excludedLibs != null) {
+        for (String xlib : excludedLibs) {
+          if (xlib.equals(libs[i].getName())) {
+            exclude = true;
+            break;
+          }
+        }
+      }
+      if (!exclude)
+        libraries.add(new Library(this, libs[i]));
     }
   }
 
