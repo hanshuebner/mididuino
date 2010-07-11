@@ -12,6 +12,7 @@
 #ifndef HELPERS_H__
 #define HELPERS_H__
 
+#include "WProgram.h"
 #include <inttypes.h>
 
 #include <stdarg.h>
