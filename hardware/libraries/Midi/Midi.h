@@ -178,7 +178,7 @@ class MidiClass {
 
 extern MidiClass Midi;
 extern MidiClass Midi2;
-extern MidiClass USBMidi;
+// extern MidiClass USBMidi;
 
 /* @} @} */
 
