@@ -5,6 +5,8 @@ class MidiUartClass;
 
 #include <inttypes.h>
 
+#include "WProgram.h"
+
 #include <MidiUartParent.hh>
 #include <RingBuffer.h>
 
