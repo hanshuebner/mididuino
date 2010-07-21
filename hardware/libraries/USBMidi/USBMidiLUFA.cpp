@@ -1,7 +1,7 @@
 #include <LUFA/Version.h>
 #include <LUFA/Drivers/USB/USB.h>
 
-#include <midi-common.h>
+#include <midi-common.hh>
 #include <MidiUart.h>
 #include "USBMidi.h"
 

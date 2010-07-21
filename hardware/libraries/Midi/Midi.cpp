@@ -3,7 +3,10 @@
 #include "WProgram.h"
 
 #include "Midi.h"
+
+#ifndef DISABLE_MIDI_CLOCK
 #include "MidiClock.h"
+#endif
 
 const midi_parse_t midi_parse[] = {
   { MIDI_NOTE_OFF,         midi_wait_byte_2 },
@@ -43,7 +46,8 @@ void MidiClass::handleByte(uint8_t byte) {
 #ifdef HOST_MIDIDUINO
     USE_LOCK();
     SET_LOCK();
-    
+
+#ifndef DISABLE_MIDI_CLOCK
     if (MidiClock.mode == MidiClock.EXTERNAL_MIDI) {
       switch (byte) {
       case MIDI_CLOCK:
@@ -64,9 +68,10 @@ void MidiClass::handleByte(uint8_t byte) {
 				break;
       }
     }
+#endif /* DISABLE_MIDI_CLOCK */
 
     CLEAR_LOCK();
-#endif
+#endif /* HOST_MIDIDUINO */
 
 		if (byte == MIDI_ACTIVE_SENSE) {
 			uart->recvActiveSenseTimer = 0;

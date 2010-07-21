@@ -46,6 +46,7 @@ void VarRangeEncoderHandle(Encoder *enc) {
 }
 
 #ifndef HOST_MIDIDUINO
+#ifndef DISABLE_MIDI_CLOCK
 #include <MidiClock.h>
 
 /**
@@ -54,7 +55,8 @@ void VarRangeEncoderHandle(Encoder *enc) {
 void TempoEncoderHandle(Encoder *enc) {
   MidiClock.setTempo(enc->getValue());
 }
-#endif
+#endif /* DISABLE_MIDI_CLOCK */
+#endif /* HOST_MIDIDUINO */
 
 Encoder::Encoder(const char *_name, encoder_handle_t _handler) {
   old = 0;

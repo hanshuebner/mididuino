@@ -133,7 +133,7 @@ void EncoderSwitchPage::display() {
 
 bool EncoderSwitchPage::handleEvent(gui_event_t *event) {
   for (int i = Buttons.BUTTON1; i <= Buttons.BUTTON4; i++) {
-    if (pages[i] != NULL && EVENT_PRESSED(event, i)) {
+    if (pages[i - Buttons.BUTTON1] != NULL && EVENT_PRESSED(event, i)) {
       if (parent != NULL) {
 				parent->setPage(pages[i - Buttons.BUTTON1]);
       }
